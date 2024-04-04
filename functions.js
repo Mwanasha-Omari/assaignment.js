@@ -12,4 +12,8 @@
 
 // Write a function that accepts an array of numbers and uses the forEach() method to console.log each number multiplied by 2.
 
+
+
+
+
 // Write a function that accepts an array of numbers and uses the first four items multiplied by 8 and the last two added by 5 .console the array wuth the new values
