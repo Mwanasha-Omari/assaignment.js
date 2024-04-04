@@ -6,7 +6,7 @@ function people() {
     if(i[0]=="a"||i[0]=="S"){
         let newWord=i.split("").sort().reverse().join('');
         newArr.push(newWord);
-       
+ 
     }
 
      else{
@@ -24,7 +24,7 @@ console.log(newArr)
 
 
  function grading() {
-    const numbers=[4,7,-3,6,0,-12,9,0]
+    let numbers=[4,7,-3,6,0,-12,9,0]
     numbers.forEach(num=>{
         if(num>0){
             console.log("positive")
@@ -56,7 +56,7 @@ isObject();
 
 // Write a function that accepts an array of numbers and uses the forEach() method to console.log each number multiplied by 2.
 
-const number=[20,34,54,29,30,33]
+let number=[20,34,54,29,30,33]
  function multiplication(){
      number.forEach(num=>{
  console.log(num*2);
@@ -68,3 +68,17 @@ const number=[20,34,54,29,30,33]
 
 
 // Write a function that accepts an array of numbers and uses the first four items multiplied by 8 and the last two added by 5 .console the array wuth the new values
+const numbers=[3,6,8,35,88,1,90,34];
+function array(numbers){
+numbers.forEach((number,index)=>{
+if (index<4){
+    numbers[index]=number*8;
+}else if(index>=numbers.length-2){
+        numbers[index]=number+5;
+    }
+
+});
+console.log(numbers);
+
+}
+array(numbers)
